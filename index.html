@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="open_modal" id="open_modal">
+            <form class="form">
+                <input type="text" id="nome" placeholder="Nome">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="senha" placeholder="Senha">
+                <input type="password" id="confirmarSenha" placeholder="Confirmar Senha">
+                <button type="button" class="btn" onclick="validatePassword()">Entrar</button>
+            </form>
+        </div>
+        <div class="modal" id="modal">
+            <div class="close_modal">
+                <button id="btn_close_modal" onclick="closeModal()">X</button>
+            </div>
+            <div class="txt_modal">
+                <h1>Por favor, preencha todos os campos.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, aut sit porro cupiditate, minima natus fugit corrupti consectetur aliquid eveniet eos optio molestias, officiis nobis repudiandae nisi? Expedita, voluptates molestias. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, ex nemo eius odio natus enim amet accusantium quae vitae fuga, quas aliquid illo. At incidunt, eum nulla sapiente placeat facere?</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
